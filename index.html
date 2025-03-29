@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Players survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Players survey form</h1>
+      <p id="description">Thank you for taking your time to fill out this form</p>
+      <form id="survey-form">
+        <fieldset>
+        <label id ="name-label">Name <input id="name" type="text" placeholder="Enter your name..." required/></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label">Age <input id="number" type="number" placeholder="Age..." min="7" max="99"/></label>
+        </fieldset>
+        <fieldset>
+          <label for ="dropdown">Which gaming platform do you prefer to play on? <select id="dropdown">
+              <option value="">select one</option>
+              <option value="1">PC</option>
+              <option value="2">Playstation</option>
+              <option value="3">Xbox</option>
+            </select>
+        </fieldset>
+        <fieldset>
+          <p>Gender</p>
+          <label for="male"><input id="male" type="radio" name="gender" value="male" checked/>Male</label>
+          <label for="female"><input id="female" type="radio" name="gender" value="female"/>Female</label>
+        </fieldset>
+        <fieldset>
+          <p>Which genres do you prefer?</p>
+          <label for ="sports"><input id="sports" type="checkbox" value="sports"/>Sports</label>
+          <label for ="strategy"><input id="strategy" type="checkbox" value="strategy"/>Strategy</label>
+          <label for ="action"><input id="action" type="checkbox" value="action"/>Action</label>
+          <label for ="adventure"><input id="adventure" type="checkbox" value="adventure"/>Adventure</label>
+          <label for ="horror"><input id="horror" type="checkbox" value="horror"/>Horror</label>
+        </fieldset>
+        <fieldset>
+          <p>Leave a comment:</p>
+          <label for="comments"><textarea id="comments" rows="5" cols="30" placeholder="Leave a comment here..."></textarea></label>
+          <input type="submit" id="submit" value="Submit"/>
+        </fieldset>
+  </body>
+  </form>
+  </html>
