@@ -1,1 +1,1 @@
-Simple survey form project to collect data from users.
+A simple survey form project to collect data from users.
